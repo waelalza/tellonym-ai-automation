@@ -74,7 +74,7 @@ async function isValidProfile(page, username, quick = false) {
  * @param {string} poem - The poem to post.
  */
 async function postToTellonym(poem) {
-    const browser = await chromium.launch({ headless: true });
+    const browser = await chromium.launch({ headless: false });
     const page = await browser.newPage();
 
     try {

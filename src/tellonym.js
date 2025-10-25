@@ -7,7 +7,7 @@ const { logAction } = require('./utils');
 require('dotenv').config();
 
 /**
- * Posts a poem to a random Tellonym profile.
+ * Posts a poem to a Tellonym profile.
  * @param {string} poem - The poem to post.
  */
 async function postToTellonym(poem) {

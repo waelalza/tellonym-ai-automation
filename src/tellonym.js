@@ -7,7 +7,7 @@ const { logAction } = require('./utils');
 require('dotenv').config();
 
 /**
- * Posts a poem to a random Tellonym profile.
+ * Posts a poem to a Tellonym profile.
  * @param {string} poem - The poem to post.
  */
 async function postToTellonym(poem) {
@@ -27,7 +27,7 @@ async function postToTellonym(poem) {
     // Simulate searching for a random profile (since actual search might vary)
     // For simplicity, assume we navigate to a known profile or use a placeholder
     // In real scenario, implement search logic
-    const randomName = ['Layla', 'Amira'][Math.floor(Math.random() * 2)]; // Placeholder
+    const randomName = 'waelalza'; // Fixed profile for testing
     await page.goto(`https://tellonym.me/${randomName}`);
 
     // Post the poem in the ask question field

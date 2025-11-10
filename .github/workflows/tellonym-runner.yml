@@ -1,0 +1,10 @@
+name: Tellonym
+on:
+  workflow_dispatch:
+  schedule: [cron: "*/30 * * * *"]
+jobs:
+  bot:
+    runs-on: self-hosted
+    steps:
+      - uses: actions/checkout@v4
+      - run: ~/tellonym/run.sh
